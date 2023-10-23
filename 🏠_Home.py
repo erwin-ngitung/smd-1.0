@@ -5,7 +5,7 @@ from pathlib import Path
 import logging
 
 st.set_page_config(
-    page_title="Home | Yeomine App",
+    page_title="Home | SMD 1.0 App",
     page_icon="🏠",
 )
 
@@ -16,23 +16,19 @@ PATH = '.'
 state['login'] = False
 state['PATH'] = PATH
 
-image = Image.open(f'{PATH}/data/images/logo_yeomine.png')
+image = Image.open(f'{PATH}/data/images/logo_medco.png')
 st1, st2, st3 = st.columns(3)
 
 with st2:
     st.image(image)
 
-st.markdown('<h3 style=\'text-align:center;\'>Welcome to Yeomine! 👋</h3>', unsafe_allow_html=True)
-
-st.image('data/images/brochure_1.png')
-
-st.image('data/images/brochure_2.png')
+st.markdown('<h3 style=\'text-align:center;\'>Welcome to SMD 1.0! 👋</h3>', unsafe_allow_html=True)
 
 st.markdown(
     """
     ### Want to learn more and purchase it?
-    - Check out [Yeomine Website] (https://erwin-ngitung.github.io/yeomine-ai/)
-    - Jump into our [Documentation] (https://erwin-ngitung.github.io/yeomine-ai/#gallery)
-    - Ask a question in our [Company] (yeomine-digital-services@gmail.com)
+    - Check out [SMD 1.0 Website] (https://github.com/erwin-ngitung/smd-1.0)
+    - Jump into our [Documentation] (https://github.com/erwin-ngitung/smd-1.0)
+    - Ask a question in our [Company] (corporate.secretary@medcoenergi.com)
     """
 )

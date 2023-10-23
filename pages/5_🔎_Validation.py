@@ -8,7 +8,7 @@ from streamlit import session_state as state
 import streamlit as st
 
 st.set_page_config(
-    page_title="Validation | Yeomine App",
+    page_title="Validation | SMD 1.0 App",
     page_icon="🔎‍",
 )
 
@@ -17,7 +17,7 @@ if 'PATH' not in state.keys():
 
 PATH = state['PATH']
 
-image = Image.open(f'{PATH}/data/images/logo_yeomine.png')
+image = Image.open(f'{PATH}/data/images/logo_medco.png')
 st1, st2, st3 = st.columns(3)
 
 with st2:

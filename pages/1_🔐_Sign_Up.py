@@ -4,7 +4,7 @@ from utils import check_email, update_json
 from PIL import Image
 
 st.set_page_config(
-    page_title="Sign Up | Yeomine App",
+    page_title="Sign Up | SMD 1.0 App",
     page_icon="🔐",
 )
 
@@ -16,7 +16,7 @@ PATH = state['PATH']
 placeholder = st.empty()
 
 with placeholder.form('Sign Up'):
-    image = Image.open(f'{PATH}/data/images/logo_yeomine.png')
+    image = Image.open(f'{PATH}/data/images/logo_medco.png')
     st1, st2, st3 = st.columns(3)
 
     with st2:

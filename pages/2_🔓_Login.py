@@ -4,7 +4,7 @@ from utils import check_account
 from PIL import Image
 
 st.set_page_config(
-    page_title="Login | Yeomine App",
+    page_title="Login | SMD 1.0 App",
     page_icon="🔓",
 )
 
@@ -16,13 +16,13 @@ PATH = state['PATH']
 placeholder = st.empty()
 
 with placeholder.form(key='Form Login'):
-    image = Image.open(f'{PATH}/data/images/logo_yeomine.png')
+    image = Image.open(f'{PATH}/data/images/logo_medco.png')
     st1, st2, st3 = st.columns(3)
 
     with st2:
         st.image(image)
 
-    st.markdown('#### Login Yeomine Application')
+    st.markdown('#### Login SMD 1.0 Application')
     email = st.text_input('Email')
     password = st.text_input('Password', type='password')
     submit = st.form_submit_button('Login',
