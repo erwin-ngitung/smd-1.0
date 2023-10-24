@@ -30,7 +30,7 @@ if 'PATH' not in state.keys():
 PATH = state['PATH']
 
 # Title
-image = Image.open(f'{PATH}/data/images/logo_medco.png')
+image = Image.open(f'{PATH}/data/images/logo_all.png')
 st1, st2, st3 = st.columns(3)
 
 with st2:
@@ -128,7 +128,8 @@ else:
 
         else:
             if streaming_file == 'Yes':
-                streaming_video = st.text_input("Please input the link streaming if you want to use it.")
+                streaming_video = st.text_input('Please input the link streaming if you want to use it.',
+                                                value='datasets/general-detect/predict/sample-video-01.mp4')
                 cap = cv2.VideoCapture(streaming_video)
             else:
                 list_files = [file for file in os.listdir(f'{PATH}/datasets/{path_object[kind_object]}/predict')]

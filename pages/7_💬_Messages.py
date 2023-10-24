@@ -14,7 +14,7 @@ if 'PATH' not in state.keys():
 PATH = state['PATH']
 
 # Title
-image = Image.open(f'{PATH}/data/images/logo_medco.png')
+image = Image.open(f'{PATH}/data/images/logo_all.png')
 st1, st2, st3 = st.columns(3)
 
 with st2:
