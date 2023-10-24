@@ -15,7 +15,7 @@ def model_analysis(img_path, ppt_template):
     slide_0 = prs.slides[0]
 
     # Slide 0
-    line_0 = slide_0.shapes[2].text_frame.paragraphs[0]
+    line_0 = slide_0.shapes[1].text_frame.paragraphs[0]
     line_0.text = f'Date: {true_time}'
     line_0.alignment = PP.CENTER
     line_0.font.name = 'Archive Black'
@@ -66,7 +66,7 @@ def report_analysis(img_path, ppt_template, dataset_true):
     slide_0 = prs.slides[0]
 
     # Slide 0
-    line_0 = slide_0.shapes[2].text_frame.paragraphs[0]
+    line_0 = slide_0.shapes[1].text_frame.paragraphs[0]
     line_0.text = f'Date: {true_time}'
     line_0.alignment = PP.CENTER
     line_0.font.name = 'Archive Black'
