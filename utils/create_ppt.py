@@ -73,9 +73,8 @@ def report_analysis(img_path, ppt_template, dataset_true, removal_ob):
     line_0.font.size = Pt(35)
     line_0.font.bold = True
 
-    idx_slide = [1, 2, 3, 4]
+    idx_slide = [1, 2, 3]
     name_slide = {'summary-prediction': 'Summary Prediction',
-                  'removal-ob-production': 'Removal OB Production',
                   'graph-count-object.png': 'Graph Count Object',
                   'coordinate-object.png': 'Graph Coordinate Object'}
 
@@ -104,23 +103,7 @@ def report_analysis(img_path, ppt_template, dataset_true, removal_ob):
                 p.font.size = Pt(30)
                 p.text = f'{ind + 1}. Ditemukan {data_label[ind]} sebanyak {data_count[ind]} site.'
 
-        elif i == 1:
-            tx_box = slides.shapes.add_textbox(left=Inches(2.5),
-                                               top=Inches(2),
-                                               width=Inches(15),
-                                               height=Inches(9))
-
-            tf = tx_box.text_frame
-
-            # removal_ob_key = list(removal_ob.keys())
-            # removal_ob_val = list(removal_ob.values())
-            #
-            # for ind in range(len(removal_ob_key)):
-            #     p = tf.add_paragraph()
-            #     p.font.size = Pt(30)
-            #     p.text = f'{removal_ob_key[ind]}: {removal_ob_val[ind]}'
-
-        elif i == 2 or i == 3:
+        elif i == 1 or i == 2:
             path_img = f'{img_path}/{list(name_slide.keys())[i]}'
 
             picture = slides.shapes
