@@ -114,8 +114,7 @@ else:
         model_output1 = BytesIO()
         prs1.save(model_output1)
 
-        removal_ob = ''
-        prs2 = cp.report_analysis(path_model_accuracy, ppt_template2,  dataset_true, removal_ob)
+        prs2 = cp.report_analysis(path_model_accuracy, ppt_template2,  dataset_true)
 
         model_output2 = BytesIO()
         prs2.save(model_output2)
@@ -205,7 +204,7 @@ else:
             model_output1 = BytesIO()
             prs1.save(model_output1)
 
-            prs2 = cp.report_analysis(path_model_accuracy, ppt_template2, dataset_true, removal_ob)
+            prs2 = cp.report_analysis(path_model_accuracy, ppt_template2, dataset_true)
 
             model_output2 = BytesIO()
             prs2.save(model_output2)

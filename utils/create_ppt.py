@@ -57,7 +57,7 @@ def model_analysis(img_path, ppt_template):
     return prs
 
 
-def report_analysis(img_path, ppt_template, dataset_true, removal_ob):
+def report_analysis(img_path, ppt_template, dataset_true):
     time_now = pytz.timezone('Asia/Jakarta')
     true_time = dt.now(time_now).strftime('%d-%m-%Y')
 
